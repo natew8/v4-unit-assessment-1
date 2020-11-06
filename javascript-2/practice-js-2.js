@@ -9,7 +9,7 @@
     It should be a string containing your best definition of what Git is.
 */
 
-//CODE HERE
+const gitDefinition = 'it is a control system that allows us to monitor versions of our code.'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -17,7 +17,7 @@
     It should be a string containing your best definition of what GitHub is.
 */
 
-//CODE HERE
+const gitHubDefinition = "Github is an online server that allows us to store and share code we've worked on. We connect our code to it through git." 
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -33,7 +33,10 @@
     following the guidelines above to describe the init command.
 */
 
-//CODE HERE
+const init = {
+    description: 'init is the way we initialize git in our current folder',
+    code: 'git init'
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -41,7 +44,10 @@
     following the guidelines above to describe the clone command.
 */
 
-//CODE HERE
+const clone = {
+    description: "Clone is the way we clone an existing git repository to our own workspace.",
+    code: "git clone"
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -49,7 +55,11 @@
     following the guidelines above to describe the status command.
 */
 
-//CODE HERE
+const status = {
+    description: "git status allows us to see how git is working in our project and what files and folders it is watching. basically what its doing at the moment.",
+    code: " git status"
+}
+
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -57,7 +67,10 @@
     following the guidelines above to describe the add command.
 */
 
-//CODE HERE
+const add = {
+    description: 'Git add is the way we tell git to watch a file we are working on.',
+    code:' git add . adds the whole folder you are currently working in. git add "file/ directory name" adds an individual file or directory'
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -65,7 +78,10 @@
     following the guidelines above to describe the commit command.
 */
 
-//CODE HERE
+const commit = {
+    description: 'commit is the way we tell git to save our work at that point.',
+    code: ' git commit -m "Some Comment"'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -73,7 +89,10 @@
     following the guidelines above to describe the command to add a remote location to your git repository.
 */
 
-//CODE HERE
+const addRemote = {
+    description: 'this command allows you to remotely add a project into an existing github repo',
+    code: "git remote add"
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -81,4 +100,7 @@
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+const push = {
+    description: "This is how you send and store your saved work to your git repo in github",
+    code: 'git push'
+}
