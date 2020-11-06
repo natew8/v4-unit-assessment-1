@@ -33,12 +33,12 @@ function sum(num1, num2){
 */
 
 function trueOrFalse(data){
-  if(data === true){
-    return (true);
+  if(data){
+    return true;
   } else {
-    return (false)
+    return false;
   }
-}
+} 
 
 //////////////////PROBLEM 6////////////////////
 /*
