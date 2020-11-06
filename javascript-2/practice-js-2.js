@@ -91,7 +91,7 @@ const commit = {
 
 const addRemote = {
     description: 'this command allows you to remotely add a project into an existing github repo',
-    code: 'git remote add (name) and (url)'
+    code: 'git remote add plus the name and url'
 }
 
 //////////////////PROBLEM 9////////////////////
