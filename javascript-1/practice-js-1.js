@@ -131,11 +131,11 @@ function bigOrSmall(numbers){
   const answers = []
   for(i = 0; i < numbers.length; i++){
     if(numbers[i] <= 100) {
-       answers.push('small')
+       (answers.push('small'))
       } else {
-        answers.push('big')
+       (answers.push('big'))
       }
-     }
+     } return (answers)
     }
 //////////////////PROBLEM 13////////////////////
 /* 
@@ -258,15 +258,24 @@ function giveMeDoubles(arr, cb) {
 */
 
 function carFactory(make, model, year) {
-  const myCar = {}
-  return(myCar `make: ${make}, model: ${model}, year: ${year},`)
+  carFactory.carMake = make
+  carFactory.carModel = model
+  carFactory.carYear = year
+  carFactory.isNew = function(){
+    if(this.year > 2018){
+      this.isNew = true
+    } else {
+      this.isNew = false
+    }
+  } 
 }
-function carYear (cb){
-     if(myCar.year > 2018){
-      myCar.isNew = true
-     } else {
-      myCar.isNew = false
-    } 
-    cb(carFactory)
-  }
+
+// function carYear (cb){
+//      if(myCar.year > 2018){
+//       myCar.isNew = true
+//      } else {
+//       myCar.isNew = false
+//     } 
+//     cb(carFactory)
+//   }
 
