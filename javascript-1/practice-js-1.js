@@ -257,18 +257,35 @@ function giveMeDoubles(arr, cb) {
   }
 */
 
-function carFactory(make, model, year) {
-  carFactory.carMake = make
-  carFactory.carModel = model
-  carFactory.carYear = year
-  carFactory.isNew = function(){
-    if(this.year > 2018){
-      this.isNew = true
+function carFactory(make, model, year){
+  const newCar = {
+    make: make,
+    model: model,
+    year: year
+  }
+  return(newCar)
+  
+  function isNew(newCar){
+    if(newCar.year > 2018){
+      newCar.isNew = true
     } else {
-      this.isNew = false
-    }
+      newCar.isNew = false
+    }return isNew
   } 
 }
+
+// function carFactory(make, model, year) {
+//   carFactory.carMake = make
+//   carFactory.carModel = model
+//   carFactory.carYear = year
+//   carFactory.isNew = function(){
+//     if(this.year > 2018){
+//       this.isNew = true
+//     } else {
+//       this.isNew = false
+//     }
+//   } 
+// }
 
 // function carYear (cb){
 //      if(myCar.year > 2018){
